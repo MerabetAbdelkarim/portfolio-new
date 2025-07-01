@@ -64,6 +64,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 glass rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110 group"
+              aria-label="Visit my GitHub profile"
             >
               <Github className="w-6 h-6 text-gray-300 group-hover:text-white transition-colors duration-300" />
             </a>
@@ -72,12 +73,14 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 glass rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110 group"
+              aria-label="Visit my LinkedIn profile"
             >
               <Linkedin className="w-6 h-6 text-gray-300 group-hover:text-blue-400 transition-colors duration-300" />
             </a>
             <a
               href="mailto:merabet.abdelkarim.dev@gmail.com"
               className="p-3 glass rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110 group"
+              aria-label="Send me an email"
             >
               <Mail className="w-6 h-6 text-gray-300 group-hover:text-green-400 transition-colors duration-300" />
             </a>
