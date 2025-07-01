@@ -118,6 +118,7 @@ const Contact = () => {
                   <a
                     href="mailto:merabet.abdelkarim.dev@gmail.com"
                     className="flex items-center p-4 glass rounded-xl hover:bg-white/10 transition-all duration-300 group"
+                    aria-label="Send me an email"
                   >
                     <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mr-4">
                       <Mail className="w-6 h-6 text-white" />
@@ -135,6 +136,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center p-4 glass rounded-xl hover:bg-white/10 transition-all duration-300 group"
+                    aria-label="Visit my GitHub profile"
                   >
                     <div className="w-12 h-12 bg-gradient-to-br from-gray-400 to-gray-600 rounded-full flex items-center justify-center mr-4">
                       <Github className="w-6 h-6 text-white" />
@@ -152,6 +154,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center p-4 glass rounded-xl hover:bg-white/10 transition-all duration-300 group"
+                    aria-label="Visit my LinkedIn profile"
                   >
                     <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mr-4">
                       <Linkedin className="w-6 h-6 text-white" />
