@@ -31,7 +31,7 @@ const Hero = () => {
         <div className={`transition-all duration-1000 ${isVisible ? 'animate-slideInUp opacity-100' : 'opacity-0'}`}>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="block text-white mb-2">Hi, I'm</span>
-            <span className="gradient-text">Fullstack Developer</span>
+            <span className="gradient-text">Frontend Developer</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
