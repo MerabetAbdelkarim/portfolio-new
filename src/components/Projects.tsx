@@ -204,7 +204,7 @@ const Projects = () => {
             className="border-2 border-white/20 text-white hover:bg-white/10 px-8 py-3 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105"
           >
             <a
-              href="https://github.com"
+              href="https://github.com/MerabetAbdelkarim?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`View All Projects on GitHub`}
