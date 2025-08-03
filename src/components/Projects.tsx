@@ -11,10 +11,10 @@ const Projects = () => {
       title: "E-Commerce Platform",
       description:
         "Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500",
-      github: "https://github.com",
-      live: "https://example.com",
+      technologies: ["React", "react bootstrap", "firebase"],
+      image: "https://res.cloudinary.com/dfpadndj0/image/upload/v1754240933/digitalshopweb.vercel.app__vecqof.png",
+      github: "https://github.com/MerabetAbdelkarim/my-cart",
+      live: "https://digitalshopweb.vercel.app/",
       featured: true,
     },
     {
