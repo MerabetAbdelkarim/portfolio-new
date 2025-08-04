@@ -10,22 +10,24 @@ const Projects = () => {
     {
       title: "E-Commerce Platform",
       description:
-        "Full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
+        "A full-stack e-commerce platform enabling users to browse products, manage carts, and securely checkout. Includes user authentication, payment integration, and an admin dashboard for inventory management.",
       technologies: ["React", "react bootstrap", "firebase"],
-      image: "https://res.cloudinary.com/dfpadndj0/image/upload/v1754240933/digitalshopweb.vercel.app__vecqof.png",
+      image:
+        "https://res.cloudinary.com/dfpadndj0/image/upload/v1754240933/digitalshopweb.vercel.app__vecqof.png",
       github: "https://github.com/MerabetAbdelkarim/my-cart",
       live: "https://digitalshopweb.vercel.app/",
       featured: true,
     },
     {
-      title: "Mobile Social App",
+      title: "Bloge App",
       description:
-        "Cross-platform social media app built with React Native. Real-time messaging, photo sharing, and social features.",
-      technologies: ["React Native", "Firebase", "Redux", "Socket.io"],
+        "A MERN stack blogging application where users can create, edit, and delete posts. Features user authentication, responsive design, and a modern UI for seamless content management.",
+      technologies: ["React JS", "bootstrap", "Node js", "Express", "MongoDB"],
       image:
-        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500",
-      github: "https://github.com",
-      live: "https://example.com",
+        "https://res.cloudinary.com/dfpadndj0/image/upload/v1754324042/323419389-6208cb6d-95c5-4239-bdd0-761805fb6301_iyu8l2.png",
+      github:
+        "https://github.com/MerabetAbdelkarim/Bloger-mern-stack-?tab=readme-ov-file",
+      live: "https://github.com/MerabetAbdelkarim/Bloger-mern-stack-?tab=readme-ov-file",
       featured: true,
     },
     {
