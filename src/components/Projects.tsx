@@ -31,26 +31,26 @@ const Projects = () => {
       featured: true,
     },
     {
-      title: "Project Management Tool",
+      title: "Doctor's Landing Page",
       description:
-        "Collaborative project management platform with real-time updates, task tracking, and team collaboration features.",
-      technologies: ["Next.js", "PostgreSQL", "Prisma", "TypeScript"],
+        "A responsive landing page for a medical professional, featuring sections for services, testimonials, and contact information. Built with modern web technologies to ensure a clean and professional appearance.",
+      technologies: ["html", "css", "bootstrap "],
       image:
-        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500",
-      github: "https://github.com",
-      live: "https://example.com",
-      featured: false,
+        "https://res.cloudinary.com/dfpadndj0/image/upload/v1754496331/merabetabdelkarim.github.io_Landing-Page-Doctor__u5yhat.png",
+      github: "https://github.com/MerabetAbdelkarim/Landing-Page-Doctor",
+      live: "https://merabetabdelkarim.github.io/Landing-Page-Doctor/",
+      featured: true,
     },
     {
-      title: "Weather Dashboard",
+      title: "Portfolio personal",
       description:
-        "Beautiful weather application with detailed forecasts, interactive maps, and location-based weather data.",
-      technologies: ["React", "TypeScript", "Weather API", "Chart.js"],
+        "A personal portfolio website showcasing my skills, projects, and experience. Features a modern design with smooth animations and responsive layout.",
+      technologies: ["html", "css", "js","tailwind css"],
       image:
-        "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500",
-      github: "https://github.com",
-      live: "https://example.com",
-      featured: false,
+        "https://res.cloudinary.com/dfpadndj0/image/upload/v1754496720/portfolio-standard.vercel.app__ndrin3.png",
+      github: "https://github.com/MerabetAbdelkarim/portfolio---standard",
+      live: "https://portfolio-standard.vercel.app/",
+      featured: true,
     },
   ];
 
