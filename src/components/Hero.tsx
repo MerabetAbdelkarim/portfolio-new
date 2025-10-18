@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,7 +41,18 @@ const Hero = () => {
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="block text-white mb-2">Hi, I'm</span>
-            <span className="gradient-text">Frontend Developer</span>
+            <TypeAnimation
+              sequence={[
+                "Frontend Developer",
+                2000,
+                "Full stack Developer",
+                2000,
+              ]}
+              wrapper="span"
+              cursor={true}
+              repeat={Infinity}
+              className="gradient-text"
+            />
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -108,7 +120,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ArrowDown className="w-6 h-6 text-gray-400" />
       </div>

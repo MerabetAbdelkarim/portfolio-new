@@ -62,9 +62,6 @@ const About = () => {
                   <h3 className="text-2xl font-bold mb-2 text-white">
                     Merabet Abdelkarim
                   </h3>
-                  <p className="text-blue-400 font-semibold">
-                    Frontend Developer
-                  </p>
                 </div>
               </div>
             </div>
