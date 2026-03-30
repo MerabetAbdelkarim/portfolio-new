@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { ThemeToggle } from './ThemeToggle';
 
 interface NavbarProps {
   activeSection: string;
@@ -46,7 +47,7 @@ const Navbar = ({ activeSection }: NavbarProps) => {
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
                 <button
@@ -54,8 +55,8 @@ const Navbar = ({ activeSection }: NavbarProps) => {
                   onClick={() => scrollToSection(item.id)}
                   className={`px-3 py-2 text-sm font-medium transition-all duration-300 relative ${
                     activeSection === item.id
-                      ? 'text-blue-400'
-                      : 'text-gray-300 hover:text-white'
+                      ? 'text-blue-600 dark:text-blue-400'
+                      : 'text-slate-700 hover:text-slate-900 dark:text-gray-300 dark:hover:text-white'
                   }`}
                 >
                   {item.label}
@@ -65,13 +66,17 @@ const Navbar = ({ activeSection }: NavbarProps) => {
                 </button>
               ))}
             </div>
+            <div className="ml-4 flex items-center">
+              <ThemeToggle />
+            </div>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile menu button and theme toggle */}
+          <div className="md:hidden flex items-center gap-4">
+            <ThemeToggle />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-gray-300 hover:text-white transition-colors duration-300"
+              className="text-slate-700 hover:text-slate-900 dark:text-gray-300 dark:hover:text-white transition-colors duration-300"
               aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -90,8 +95,8 @@ const Navbar = ({ activeSection }: NavbarProps) => {
                 onClick={() => scrollToSection(item.id)}
                 className={`block px-3 py-2 text-base font-medium w-full text-left transition-all duration-300 ${
                   activeSection === item.id
-                    ? 'text-blue-400 bg-blue-400/10'
-                    : 'text-gray-300 hover:text-white hover:bg-white/5'
+                    ? 'text-blue-600 bg-blue-600/10 dark:text-blue-400 dark:bg-blue-400/10'
+                    : 'text-slate-700 hover:text-slate-900 hover:bg-slate-200/50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-white/5'
                 }`}
               >
                 {item.label}

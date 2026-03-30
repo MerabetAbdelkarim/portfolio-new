@@ -39,7 +39,7 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             About <span className="gradient-text">Me</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-600 dark:text-gray-300 max-w-3xl mx-auto">
             I'm a passionate front end developer who loves turning ideas into
             reality through code.
           </p>
@@ -54,12 +54,12 @@ const About = () => {
             <div className="relative">
               <div className="glass p-8 rounded-2xl">
                 <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 p-1">
-                  <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
-                    <User className="w-16 h-16 text-white" />
+                  <div className="w-full h-full rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
+                    <User className="w-16 h-16 text-slate-900 dark:text-white" />
                   </div>
                 </div>
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold mb-2 text-white">
+                  <h3 className="text-2xl font-bold mb-2 text-slate-900 dark:text-white">
                     Merabet Abdelkarim
                   </h3>
                 </div>
@@ -73,7 +73,7 @@ const About = () => {
             }`}
           >
             <div className="space-y-6">
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-lg text-slate-600 dark:text-gray-300 leading-relaxed">
                 With expertise in modern web technologies, I specialize in
                 creating seamless user experiences and robust backend solutions.
                 My passion lies in building applications that make a difference.
@@ -107,10 +107,10 @@ const About = () => {
               </div> */}
 
               <div className="pt-4">
-                <h4 className="text-lg font-semibold text-white mb-3">
+                <h4 className="text-lg font-semibold text-slate-900 dark:text-white mb-3">
                   Key Highlights
                 </h4>
-                <ul className="space-y-2 text-gray-300">
+                <ul className="space-y-2 text-slate-600 dark:text-gray-300">
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
                     <span>

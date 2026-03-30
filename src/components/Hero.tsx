@@ -40,7 +40,7 @@ const Hero = () => {
           }`}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="block text-white mb-2">Hi, I'm</span>
+            <span className="block text-slate-900 dark:text-white mb-2">Hi, I'm</span>
             <TypeAnimation
               sequence={[
                 "Frontend Developer",
@@ -55,7 +55,7 @@ const Hero = () => {
             />
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-slate-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Passionate about creating amazing web experiences with
             <span className="text-blue-400 font-semibold"> React</span>,
             <span className="text-purple-400 font-semibold"> Next.js</span>,
@@ -74,7 +74,7 @@ const Hero = () => {
             <Button
               onClick={scrollToContact}
               variant="outline"
-              className="border-2 border-white/20 text-white hover:bg-white/10 px-8 py-3 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105"
+              className="border-2 border-slate-300 dark:border-white/20 text-slate-700 hover:text-slate-900 hover:bg-slate-200/50 dark:text-white dark:hover:bg-white/10 px-8 py-3 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105"
             >
               Get In Touch
             </Button>
@@ -82,7 +82,7 @@ const Hero = () => {
             <Button
               asChild
               variant="outline"
-              className="border-2 border-white/20 text-white hover:bg-white/10 px-8 py-3 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105"
+              className="border-2 border-slate-300 dark:border-white/20 text-slate-700 hover:text-slate-900 hover:bg-slate-200/50 dark:text-white dark:hover:bg-white/10 px-8 py-3 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105"
             >
               <a href="/Merabet-Abdelkarim_Front-end.pdf" download>
                 Download Resume
@@ -95,26 +95,26 @@ const Hero = () => {
               href="https://github.com/MerabetAbdelkarim"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 glass rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110 group"
+              className="p-3 glass rounded-full hover:bg-slate-200/50 dark:hover:bg-white/10 transition-all duration-300 hover:scale-110 group"
               aria-label="Visit my GitHub profile"
             >
-              <Github className="w-6 h-6 text-gray-300 group-hover:text-white transition-colors duration-300" />
+              <Github className="w-6 h-6 text-slate-600 group-hover:text-slate-900 dark:text-gray-300 dark:group-hover:text-white transition-colors duration-300" />
             </a>
             <a
               href="https://www.linkedin.com/in/merabet-abdelkarim/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 glass rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110 group"
+              className="p-3 glass rounded-full hover:bg-slate-200/50 dark:hover:bg-white/10 transition-all duration-300 hover:scale-110 group"
               aria-label="Visit my LinkedIn profile"
             >
-              <Linkedin className="w-6 h-6 text-gray-300 group-hover:text-blue-400 transition-colors duration-300" />
+              <Linkedin className="w-6 h-6 text-slate-600 group-hover:text-blue-600 dark:text-gray-300 dark:group-hover:text-blue-400 transition-colors duration-300" />
             </a>
             <a
               href="mailto:merabet.abdelkarim.dev@gmail.com"
-              className="p-3 glass rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110 group"
+              className="p-3 glass rounded-full hover:bg-slate-200/50 dark:hover:bg-white/10 transition-all duration-300 hover:scale-110 group"
               aria-label="Send me an email"
             >
-              <Mail className="w-6 h-6 text-gray-300 group-hover:text-green-400 transition-colors duration-300" />
+              <Mail className="w-6 h-6 text-slate-600 group-hover:text-green-600 dark:text-gray-300 dark:group-hover:text-green-400 transition-colors duration-300" />
             </a>
           </div>
         </div>

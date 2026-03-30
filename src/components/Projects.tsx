@@ -81,10 +81,10 @@ const Projects = () => {
             isVisible ? "animate-slideInUp opacity-100" : "opacity-0"
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-white">
             My <span className="gradient-text">Projects</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-600 dark:text-gray-300 max-w-3xl mx-auto">
             A collection of projects that showcase my skills and passion for
             development.
           </p>
@@ -100,7 +100,7 @@ const Projects = () => {
               style={{ transitionDelay: `${index * 200}ms` }}
             >
               <div
-                className={`glass rounded-2xl overflow-hidden hover:bg-white/10 transition-all duration-500 group ${
+                className={`glass rounded-2xl overflow-hidden hover:bg-slate-200/50 dark:hover:bg-white/10 transition-all duration-500 group ${
                   project.featured ? "border-2 border-blue-400/30" : ""
                 }`}
               >
@@ -119,7 +119,7 @@ const Projects = () => {
                       alt={`Screenshot of ${project.title} project`}
                       className="w-full h-64 md:h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-100/80 dark:from-slate-900/80 to-transparent"></div>
                     {project.featured && (
                       <div className="absolute top-4 left-4">
                         <span className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
@@ -134,11 +134,11 @@ const Projects = () => {
                       project.featured ? "lg:order-2" : "md:col-span-2"
                     } flex flex-col justify-center`}
                   >
-                    <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors duration-300">
+                    <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
                       {project.title}
                     </h3>
 
-                    <p className="text-gray-300 mb-6 leading-relaxed">
+                    <p className="text-slate-600 dark:text-gray-300 mb-6 leading-relaxed">
                       {project.description}
                     </p>
 
@@ -157,7 +157,7 @@ const Projects = () => {
                       <Button
                         asChild
                         variant="outline"
-                        className="border-white/20 text-white hover:bg-white/10 group/btn"
+                        className="border-slate-300 text-slate-700 hover:text-slate-900 hover:bg-slate-200/50 dark:border-white/20 dark:text-white dark:hover:bg-white/10 group/btn"
                       >
                         <a
                           href={project.github}
@@ -199,11 +199,11 @@ const Projects = () => {
             isVisible ? "animate-fadeIn opacity-100" : "opacity-0"
           }`}
         >
-          <p className="text-gray-300 mb-6">Want to see more of my work?</p>
+          <p className="text-slate-600 dark:text-gray-300 mb-6">Want to see more of my work?</p>
           <Button
             asChild
             variant="outline"
-            className="border-2 border-white/20 text-white hover:bg-white/10 px-8 py-3 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105"
+            className="border-2 border-slate-300 text-slate-700 hover:text-slate-900 hover:bg-slate-200/50 dark:border-white/20 dark:text-white dark:hover:bg-white/10 px-8 py-3 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105"
           >
             <a
               href="https://github.com/MerabetAbdelkarim?tab=repositories"

@@ -58,15 +58,15 @@ const SkillsSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-slate-900 py-20 px-6" id="skills">
+    <section ref={sectionRef} className="py-20 px-6" id="skills">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-white mb-4">
+        <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
           My{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
             Skills
           </span>
         </h2>
-        <p className="text-gray-300 mb-12 max-w-2xl mx-auto">
+        <p className="text-slate-600 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
           Here's a categorized overview of the tools, frameworks, and
           technologies I work with regularly.
         </p>
@@ -75,20 +75,20 @@ const SkillsSection = () => {
           {categories.map((category, index) => (
             <div
               key={category.title}
-              className={`bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-md transition-opacity duration-1000 ${
+              className={`bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-md transition-opacity duration-1000 ${
                 isVisible
                   ? `animate__animated animate__fadeInUp animate__delay-${index}s`
                   : "opacity-0"
               }`}
             >
-              <h3 className="text-white text-xl font-semibold mb-4">
+              <h3 className="text-slate-900 dark:text-white text-xl font-semibold mb-4">
                 {category.title}
               </h3>
               <ul className="flex flex-wrap gap-2">
                 {category.skills.map((skill) => (
                   <li
                     key={skill}
-                    className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-400/30 text-white px-3 py-1.5 rounded-full text-sm hover:scale-105 transition-transform"
+                    className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 dark:from-blue-500/20 dark:to-purple-500/20 border border-blue-400/30 text-slate-800 dark:text-white px-3 py-1.5 rounded-full text-sm hover:scale-105 transition-transform"
                   >
                     {skill}
                   </li>

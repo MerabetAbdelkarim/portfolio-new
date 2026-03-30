@@ -81,7 +81,7 @@ const Contact = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-800/50"
     >
       <div className="max-w-6xl mx-auto">
         <div
@@ -89,10 +89,10 @@ const Contact = () => {
             isVisible ? "animate-slideInUp opacity-100" : "opacity-0"
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-white">
             Get In <span className="gradient-text">Touch</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-600 dark:text-gray-300 max-w-3xl mx-auto">
             Have a project in mind or just want to say hello? I'd love to hear
             from you!
           </p>
@@ -106,10 +106,10 @@ const Contact = () => {
           >
             <div className="space-y-8">
               <div className="glass p-8 rounded-2xl">
-                <h3 className="text-2xl font-bold text-white mb-6">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
                   Let's Connect
                 </h3>
-                <p className="text-gray-300 mb-8 leading-relaxed">
+                <p className="text-slate-600 dark:text-gray-300 mb-8 leading-relaxed">
                   I'm always interested in new opportunities, challenging
                   projects, and great conversations. Whether you're looking to
                   collaborate or just want to connect, feel free to reach out!
@@ -117,57 +117,57 @@ const Contact = () => {
                 <div className="space-y-6">
                   <a
                     href="mailto:merabet.abdelkarim.dev@gmail.com"
-                    className="flex items-center p-4 glass rounded-xl hover:bg-white/10 transition-all duration-300 group"
+                    className="flex items-center p-4 glass rounded-xl hover:bg-slate-200/50 dark:hover:bg-white/10 transition-all duration-300 group"
                     aria-label="Send me an email"
                   >
                     <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mr-4">
                       <Mail className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <p className="text-white font-semibold group-hover:text-blue-400 transition-colors duration-300">
+                      <p className="text-slate-900 dark:text-white font-semibold group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
                         merabet.abdelkarim.dev@gmail.com
                       </p>
-                      <p className="text-gray-400 text-sm">Send me an email</p>
+                      <p className="text-slate-500 dark:text-gray-400 text-sm">Send me an email</p>
                     </div>
-                    <ArrowRight className="w-5 h-5 text-gray-400 ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" />
+                    <ArrowRight className="w-5 h-5 text-slate-500 dark:text-gray-400 ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" />
                   </a>
                   <a
                     href="https://github.com/MerabetAbdelkarim"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center p-4 glass rounded-xl hover:bg-white/10 transition-all duration-300 group"
+                    className="flex items-center p-4 glass rounded-xl hover:bg-slate-200/50 dark:hover:bg-white/10 transition-all duration-300 group"
                     aria-label="Visit my GitHub profile"
                   >
                     <div className="w-12 h-12 bg-gradient-to-br from-gray-400 to-gray-600 rounded-full flex items-center justify-center mr-4">
                       <Github className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <p className="text-white font-semibold group-hover:text-gray-400 transition-colors duration-300">
+                      <p className="text-slate-900 dark:text-white font-semibold group-hover:text-slate-600 dark:group-hover:text-gray-400 transition-colors duration-300">
                         GitHub Profile
                       </p>
-                      <p className="text-gray-400 text-sm">Check out my code</p>
+                      <p className="text-slate-500 dark:text-gray-400 text-sm">Check out my code</p>
                     </div>
-                    <ArrowRight className="w-5 h-5 text-gray-400 ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" />
+                    <ArrowRight className="w-5 h-5 text-slate-500 dark:text-gray-400 ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/merabet-abdelkarim/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center p-4 glass rounded-xl hover:bg-white/10 transition-all duration-300 group"
+                    className="flex items-center p-4 glass rounded-xl hover:bg-slate-200/50 dark:hover:bg-white/10 transition-all duration-300 group"
                     aria-label="Visit my LinkedIn profile"
                   >
                     <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mr-4">
                       <Linkedin className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <p className="text-white font-semibold group-hover:text-blue-400 transition-colors duration-300">
+                      <p className="text-slate-900 dark:text-white font-semibold group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
                         LinkedIn Profile
                       </p>
-                      <p className="text-gray-400 text-sm">
+                      <p className="text-slate-500 dark:text-gray-400 text-sm">
                         Let's connect professionally
                       </p>
                     </div>
-                    <ArrowRight className="w-5 h-5 text-gray-400 ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" />
+                    <ArrowRight className="w-5 h-5 text-slate-500 dark:text-gray-400 ml-auto opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" />
                   </a>
                 </div>
               </div>
@@ -179,7 +179,7 @@ const Contact = () => {
             }`}
           >
             <div className="glass p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold text-white mb-6">
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
                 Send a Message
               </h3>
 
@@ -188,7 +188,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-white font-medium mb-2"
+                    className="block text-slate-900 dark:text-white font-medium mb-2"
                   >
                     Your Name
                   </label>
@@ -197,14 +197,14 @@ const Contact = () => {
                     id="name"
                     name="name"
                     required
-                    className="bg-slate-700/50 border-slate-600 text-white placeholder-gray-400 focus:border-blue-400 focus:ring-blue-400"
+                    className="bg-white dark:bg-slate-700/50 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-400 focus:border-blue-400 focus:ring-blue-400"
                     placeholder="Enter your name"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-white font-medium mb-2"
+                    className="block text-slate-900 dark:text-white font-medium mb-2"
                   >
                     Your Email
                   </label>
@@ -213,14 +213,14 @@ const Contact = () => {
                     id="email"
                     name="email"
                     required
-                    className="bg-slate-700/50 border-slate-600 text-white placeholder-gray-400 focus:border-blue-400 focus:ring-blue-400"
+                    className="bg-white dark:bg-slate-700/50 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-400 focus:border-blue-400 focus:ring-blue-400"
                     placeholder="Enter your email"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-white font-medium mb-2"
+                    className="block text-slate-900 dark:text-white font-medium mb-2"
                   >
                     Your Message
                   </label>
@@ -229,7 +229,7 @@ const Contact = () => {
                     name="message"
                     required
                     rows={5}
-                    className="bg-slate-700/50 border-slate-600 text-white placeholder-gray-400 focus:border-blue-400 focus:ring-blue-400 resize-none"
+                    className="bg-white dark:bg-slate-700/50 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-400 focus:border-blue-400 focus:ring-blue-400 resize-none"
                     placeholder="Tell me about your project or just say hello!"
                   />
                 </div>
@@ -255,11 +255,11 @@ const Contact = () => {
           </div>
         </div>
         <div
-          className={`text-center mt-16 pt-8 border-t border-white/10 transition-all duration-1000 delay-700 ${
+          className={`text-center mt-16 pt-8 border-t border-slate-300 dark:border-white/10 transition-all duration-1000 delay-700 ${
             isVisible ? "animate-fadeIn opacity-100" : "opacity-0"
           }`}
         >
-          <p className="text-gray-400">
+          <p className="text-slate-500 dark:text-gray-400">
             © {year} Merabet Abdelkarim . All rights reserved.
           </p>
         </div>
